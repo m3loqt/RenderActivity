@@ -8,7 +8,8 @@ app.use(express.json());
 app.get('/', (req, res) => {
     res.status(200).send('Welcome to my server');
 });
-const PORT = 3333;
+
+const PORT = process.env.PORT || 3333;
 
 app.listen(PORT, () => {
     console.log(`Server Started on port ${PORT}`);
