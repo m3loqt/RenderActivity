@@ -30,4 +30,5 @@ router.get('/mydata', (req, res) => {
     res.status(200).send({"first_name": FN,  "last_name": LN, "age": AGE, "school_email": SE})
 })
 
+
 export default router;
